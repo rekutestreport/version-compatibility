@@ -1,0 +1,3459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.8.0 on linux)" generated="2025-04-09T05:11:13.604619" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites" source="/home/runner/work/reku-robot/reku-robot/suites">
+<suite id="s1-s1" name="Compatibility" source="/home/runner/work/reku-robot/reku-robot/suites/compatibility">
+<suite id="s1-s1-s1" name="Version Compatibility Test" source="/home/runner/work/reku-robot/reku-robot/suites/compatibility/version_compatibility_test.robot">
+<test id="s1-s1-s1-t1" name="ANDROID - v15.0 - Pixel 9 (Emulator)" line="6">
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:13.844500" level="INFO">${M_TYPE} = ANDROID</msg>
+<arg>${M_TYPE}</arg>
+<arg>ANDROID</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.843146" elapsed="0.001424"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:13.846310" level="INFO">${CD_DEVICE} = Pixel 9</msg>
+<arg>${CD_DEVICE}</arg>
+<arg>Pixel 9</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.844752" elapsed="0.001625"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:13.847768" level="INFO">${CD_OS} = 15.0</msg>
+<arg>${CD_OS}</arg>
+<arg>15.0</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.846534" elapsed="0.001293"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:13.849329" level="INFO">${CD_APP_URL} = tb://8b01876066524052a5f30645</msg>
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL_APK}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.847962" elapsed="0.001423"/>
+</kw>
+<kw name="Set data environment and device" owner="general">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:13.850297" level="INFO">
+LOG AutomatedTest</msg>
+<arg>\nLOG AutomatedTest</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.850170" elapsed="0.000186"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\nLOG AutomatedTest</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.850516" elapsed="0.000551"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:13.851478" level="INFO">Run on Environment	: PROD</msg>
+<arg>Run on Environment\t: ${ENV}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.851218" elapsed="0.000316"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Run on Environment\t: ${ENV}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.851668" elapsed="0.000204"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:13.852371" level="INFO">${ENV} = PROD</msg>
+<arg>${ENV}</arg>
+<arg>${ENV}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.852071" elapsed="0.000353"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:13.852755" level="INFO">TAG TEST		: VERS_COMP</msg>
+<arg>TAG TEST\t\t: ${TAG_TEST}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.852565" elapsed="0.000246"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TAG TEST\t\t: ${TAG_TEST}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.852933" elapsed="0.000199"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:13.853629" level="INFO">${TAG_TEST} = VERS_COMP</msg>
+<arg>${TAG_TEST}</arg>
+<arg>${TAG_TEST}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.853328" elapsed="0.000353"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:13.853947" level="INFO">Mobile Device Type	: ANDROID</msg>
+<arg>Mobile Device Type\t: ${M_TYPE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.853803" elapsed="0.000197"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Mobile Device Type\t: ${M_TYPE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.854118" elapsed="0.000193"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:13.854824" level="INFO">${M_TYPE} = ANDROID</msg>
+<arg>${M_TYPE}</arg>
+<arg>${M_TYPE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.854514" elapsed="0.000362"/>
+</kw>
+<kw name="Get Variables" owner="BuiltIn">
+<arg>${DEVICE}</arg>
+<doc>Returns a dictionary containing all variables in the current scope.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.855000" elapsed="0.000445"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:13.855730" level="INFO">Run with Cloud Device	: TESTINGBOT</msg>
+<arg>Run with Cloud Device\t: ${DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.855582" elapsed="0.000219"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Run with Cloud Device\t: ${DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.855921" elapsed="0.000197"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:13.856622" level="INFO">${DEVICE} = TESTINGBOT</msg>
+<arg>${DEVICE}</arg>
+<arg>${DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.856322" elapsed="0.000380"/>
+</kw>
+<if>
+<branch type="IF" condition="('${DEVICE}'=='BROWSERSTACK')">
+<kw name="Log" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:13.857036" elapsed="0.000026"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:13.857178" elapsed="0.000023"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_DEVICE}</arg>
+<arg>${CD_DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:13.857315" elapsed="0.000022"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:13.857447" elapsed="0.000023"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:13.857576" elapsed="0.000023"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_OS}</arg>
+<arg>${CD_OS}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:13.857715" elapsed="0.000028"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:13.857854" elapsed="0.000022"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:13.857981" elapsed="0.000022"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:13.858110" elapsed="0.000022"/>
+</kw>
+<status status="NOT RUN" start="2025-04-09T05:11:13.856813" elapsed="0.001354"/>
+</branch>
+<status status="PASS" start="2025-04-09T05:11:13.856781" elapsed="0.001454"/>
+</if>
+<if>
+<branch type="IF" condition="('${DEVICE}'=='TESTINGBOT')">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:13.858663" level="INFO">CD_DEVICE		: Pixel 9</msg>
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.858506" elapsed="0.000212"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.858836" elapsed="0.000198"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:13.859532" level="INFO">${CD_DEVICE} = Pixel 9</msg>
+<arg>${CD_DEVICE}</arg>
+<arg>${CD_DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.859228" elapsed="0.000357"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:13.859859" level="INFO">CD_OS			: 15.0</msg>
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.859715" elapsed="0.000196"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.860025" elapsed="0.000191"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:13.860762" level="INFO">${CD_OS} = 15.0</msg>
+<arg>${CD_OS}</arg>
+<arg>${CD_OS}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.860410" elapsed="0.000407"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:13.861095" level="INFO">CD_APP_URL		: tb://8b01876066524052a5f30645</msg>
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.860947" elapsed="0.000200"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.861262" elapsed="0.000192"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:13.861953" level="INFO">${CD_APP_URL} = tb://8b01876066524052a5f30645</msg>
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:13.861645" elapsed="0.000359"/>
+</kw>
+<status status="PASS" start="2025-04-09T05:11:13.858314" elapsed="0.003730"/>
+</branch>
+<status status="PASS" start="2025-04-09T05:11:13.858294" elapsed="0.003777"/>
+</if>
+<status status="PASS" start="2025-04-09T05:11:13.849854" elapsed="0.012271"/>
+</kw>
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-04-09T05:11:14.063533" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-04-09T05:11:14.063205" elapsed="0.001271">No application is open</status>
+</kw>
+<msg time="2025-04-09T05:11:14.066889" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-04-09T05:11:14.067082" level="FAIL">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</msg>
+<arg>http://${TESTINGBOT_KEY}:${TESTINGBOT_SECRET}@hub.testingbot.com/wd/hub</arg>
+<arg>platformName=${M_TYPE}</arg>
+<arg>deviceName=${CD_DEVICE}</arg>
+<arg>version=${CD_OS}</arg>
+<arg>app=${CD_APP_URL}</arg>
+<arg>realDevice=true</arg>
+<arg>build=[${TIME_STAMP}][${ENV}][VERS_COMP] REKENINGKU FLUTTER</arg>
+<arg>name=${TEST_NAME}</arg>
+<arg>autoGrantPermissions=true</arg>
+<arg>automationName=UiAutomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-04-09T05:11:13.862237" elapsed="0.205500">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</status>
+</kw>
+<kw name="Click signin button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.068003" elapsed="0.000037"/>
+</kw>
+<kw name="Display sign in page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.068197" elapsed="0.000028"/>
+</kw>
+<kw name="Input signin email textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_EMAIL}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:14.068376" elapsed="0.000027"/>
+</kw>
+<kw name="Input signin password textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_PASSWORD}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:14.068696" elapsed="0.000031"/>
+</kw>
+<kw name="Click signin action button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.068873" elapsed="0.000026"/>
+</kw>
+<kw name="Display pin verification page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.069039" elapsed="0.000027"/>
+</kw>
+<kw name="Input pin verification textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_PIN}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:14.069207" elapsed="0.000029"/>
+</kw>
+<kw name="Display home page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.069372" elapsed="0.000025"/>
+</kw>
+<kw name="Check coachmark popup if showup" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.069528" elapsed="0.000025"/>
+</kw>
+<kw name="Check navbar home is selected" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.069686" elapsed="0.000029"/>
+</kw>
+<kw name="Click profile menu button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.069907" elapsed="0.000027"/>
+</kw>
+<kw name="Check profile page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.070092" elapsed="0.000026"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.070222" elapsed="0.000022"/>
+</kw>
+<tag>VERS_COMP</tag>
+<status status="FAIL" start="2025-04-09T05:11:13.841527" elapsed="0.228898">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</status>
+</test>
+<test id="s1-s1-s1-t2" name="ANDROID - v14.0 - Pixel 8 (Emulator)" line="37">
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.071665" level="INFO">${M_TYPE} = ANDROID</msg>
+<arg>${M_TYPE}</arg>
+<arg>ANDROID</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.071427" elapsed="0.000294"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.072067" level="INFO">${CD_DEVICE} = Pixel 8</msg>
+<arg>${CD_DEVICE}</arg>
+<arg>Pixel 8</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.071853" elapsed="0.000263"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.072452" level="INFO">${CD_OS} = 14.0</msg>
+<arg>${CD_OS}</arg>
+<arg>14.0</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.072246" elapsed="0.000259"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.072899" level="INFO">${CD_APP_URL} = tb://8b01876066524052a5f30645</msg>
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL_APK}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.072629" elapsed="0.000320"/>
+</kw>
+<kw name="Set data environment and device" owner="general">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.073904" level="INFO">
+LOG AutomatedTest</msg>
+<arg>\nLOG AutomatedTest</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.073781" elapsed="0.000178"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\nLOG AutomatedTest</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.074079" elapsed="0.000161"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.074752" level="INFO">Run on Environment	: PROD</msg>
+<arg>Run on Environment\t: ${ENV}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.074543" elapsed="0.000266"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Run on Environment\t: ${ENV}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.074932" elapsed="0.000201"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.075628" level="INFO">${ENV} = PROD</msg>
+<arg>${ENV}</arg>
+<arg>${ENV}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.075328" elapsed="0.000353"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.075957" level="INFO">TAG TEST		: VERS_COMP</msg>
+<arg>TAG TEST\t\t: ${TAG_TEST}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.075806" elapsed="0.000204"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TAG TEST\t\t: ${TAG_TEST}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.076128" elapsed="0.000196"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.076902" level="INFO">${TAG_TEST} = VERS_COMP</msg>
+<arg>${TAG_TEST}</arg>
+<arg>${TAG_TEST}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.076523" elapsed="0.000437"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.077238" level="INFO">Mobile Device Type	: ANDROID</msg>
+<arg>Mobile Device Type\t: ${M_TYPE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.077087" elapsed="0.000204"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Mobile Device Type\t: ${M_TYPE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.077408" elapsed="0.000202"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.078151" level="INFO">${M_TYPE} = ANDROID</msg>
+<arg>${M_TYPE}</arg>
+<arg>${M_TYPE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.077810" elapsed="0.000394"/>
+</kw>
+<kw name="Get Variables" owner="BuiltIn">
+<arg>${DEVICE}</arg>
+<doc>Returns a dictionary containing all variables in the current scope.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.078328" elapsed="0.000428"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.079029" level="INFO">Run with Cloud Device	: TESTINGBOT</msg>
+<arg>Run with Cloud Device\t: ${DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.078883" elapsed="0.000198"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Run with Cloud Device\t: ${DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.079196" elapsed="0.000190"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.079981" level="INFO">${DEVICE} = TESTINGBOT</msg>
+<arg>${DEVICE}</arg>
+<arg>${DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.079589" elapsed="0.000470"/>
+</kw>
+<if>
+<branch type="IF" condition="('${DEVICE}'=='BROWSERSTACK')">
+<kw name="Log" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.080514" elapsed="0.000036"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.080709" elapsed="0.000026"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_DEVICE}</arg>
+<arg>${CD_DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.080852" elapsed="0.000023"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.080985" elapsed="0.000023"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.081150" elapsed="0.000025"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_OS}</arg>
+<arg>${CD_OS}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.081285" elapsed="0.000022"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.081414" elapsed="0.000023"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.081548" elapsed="0.000023"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.081681" elapsed="0.000025"/>
+</kw>
+<status status="NOT RUN" start="2025-04-09T05:11:14.080200" elapsed="0.001558"/>
+</branch>
+<status status="PASS" start="2025-04-09T05:11:14.080161" elapsed="0.001630"/>
+</if>
+<if>
+<branch type="IF" condition="('${DEVICE}'=='TESTINGBOT')">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.082244" level="INFO">CD_DEVICE		: Pixel 8</msg>
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.082050" elapsed="0.000252"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.082426" elapsed="0.000204"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.083170" level="INFO">${CD_DEVICE} = Pixel 8</msg>
+<arg>${CD_DEVICE}</arg>
+<arg>${CD_DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.082834" elapsed="0.000390"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.083500" level="INFO">CD_OS			: 14.0</msg>
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.083351" elapsed="0.000202"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.083670" elapsed="0.000195"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.084382" level="INFO">${CD_OS} = 14.0</msg>
+<arg>${CD_OS}</arg>
+<arg>${CD_OS}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.084060" elapsed="0.000375"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.084772" level="INFO">CD_APP_URL		: tb://8b01876066524052a5f30645</msg>
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.084605" elapsed="0.000220"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.084942" elapsed="0.000196"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.085667" level="INFO">${CD_APP_URL} = tb://8b01876066524052a5f30645</msg>
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.085335" elapsed="0.000384"/>
+</kw>
+<status status="PASS" start="2025-04-09T05:11:14.081857" elapsed="0.003904"/>
+</branch>
+<status status="PASS" start="2025-04-09T05:11:14.081839" elapsed="0.003948"/>
+</if>
+<status status="PASS" start="2025-04-09T05:11:14.073395" elapsed="0.012446"/>
+</kw>
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-04-09T05:11:14.281394" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-04-09T05:11:14.281171" elapsed="0.000461">No application is open</status>
+</kw>
+<msg time="2025-04-09T05:11:14.283918" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-04-09T05:11:14.284188" level="FAIL">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</msg>
+<arg>http://${TESTINGBOT_KEY}:${TESTINGBOT_SECRET}@hub.testingbot.com/wd/hub</arg>
+<arg>platformName=${M_TYPE}</arg>
+<arg>deviceName=${CD_DEVICE}</arg>
+<arg>version=${CD_OS}</arg>
+<arg>app=${CD_APP_URL}</arg>
+<arg>realDevice=true</arg>
+<arg>build=[${TIME_STAMP}][${ENV}][VERS_COMP] REKENINGKU FLUTTER</arg>
+<arg>name=${TEST_NAME}</arg>
+<arg>autoGrantPermissions=true</arg>
+<arg>automationName=UiAutomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-04-09T05:11:14.085954" elapsed="0.198434">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</status>
+</kw>
+<kw name="Click signin button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.284602" elapsed="0.000046"/>
+</kw>
+<kw name="Display sign in page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.284799" elapsed="0.000028"/>
+</kw>
+<kw name="Input signin email textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_EMAIL}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:14.284968" elapsed="0.000025"/>
+</kw>
+<kw name="Input signin password textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_PASSWORD}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:14.285225" elapsed="0.000026"/>
+</kw>
+<kw name="Click signin action button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.285385" elapsed="0.000026"/>
+</kw>
+<kw name="Display pin verification page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.285536" elapsed="0.000025"/>
+</kw>
+<kw name="Input pin verification textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_PIN}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:14.285712" elapsed="0.000026"/>
+</kw>
+<kw name="Display home page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.285867" elapsed="0.000025"/>
+</kw>
+<kw name="Check coachmark popup if showup" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.286148" elapsed="0.000027"/>
+</kw>
+<kw name="Check navbar home is selected" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.286313" elapsed="0.000025"/>
+</kw>
+<kw name="Click profile menu button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.286522" elapsed="0.000026"/>
+</kw>
+<kw name="Check profile page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.286702" elapsed="0.000025"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.286828" elapsed="0.000022"/>
+</kw>
+<tag>VERS_COMP</tag>
+<status status="FAIL" start="2025-04-09T05:11:14.070949" elapsed="0.216041">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</status>
+</test>
+<test id="s1-s1-s1-t3" name="ANDROID - v13.0 - Pixel 6a (Emulator)" line="68">
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.288100" level="INFO">${M_TYPE} = ANDROID</msg>
+<arg>${M_TYPE}</arg>
+<arg>ANDROID</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.287840" elapsed="0.000313"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.288484" level="INFO">${CD_DEVICE} = Pixel 6a</msg>
+<arg>${CD_DEVICE}</arg>
+<arg>Pixel 6a</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.288281" elapsed="0.000251"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.288876" level="INFO">${CD_OS} = 13.0</msg>
+<arg>${CD_OS}</arg>
+<arg>13.0</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.288672" elapsed="0.000256"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.289268" level="INFO">${CD_APP_URL} = tb://8b01876066524052a5f30645</msg>
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL_APK}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.289049" elapsed="0.000266"/>
+</kw>
+<kw name="Set data environment and device" owner="general">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.290073" level="INFO">
+LOG AutomatedTest</msg>
+<arg>\nLOG AutomatedTest</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.289960" elapsed="0.000164"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\nLOG AutomatedTest</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.290240" elapsed="0.000156"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.290790" level="INFO">Run on Environment	: PROD</msg>
+<arg>Run on Environment\t: ${ENV}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.290581" elapsed="0.000282"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Run on Environment\t: ${ENV}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.291038" elapsed="0.000230"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.291741" level="INFO">${ENV} = PROD</msg>
+<arg>${ENV}</arg>
+<arg>${ENV}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.291461" elapsed="0.000337"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.292089" level="INFO">TAG TEST		: VERS_COMP</msg>
+<arg>TAG TEST\t\t: ${TAG_TEST}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.291939" elapsed="0.000202"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TAG TEST\t\t: ${TAG_TEST}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.292308" elapsed="0.000200"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.293008" level="INFO">${TAG_TEST} = VERS_COMP</msg>
+<arg>${TAG_TEST}</arg>
+<arg>${TAG_TEST}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.292723" elapsed="0.000337"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.293350" level="INFO">Mobile Device Type	: ANDROID</msg>
+<arg>Mobile Device Type\t: ${M_TYPE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.293184" elapsed="0.000217"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Mobile Device Type\t: ${M_TYPE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.293527" elapsed="0.000200"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.294204" level="INFO">${M_TYPE} = ANDROID</msg>
+<arg>${M_TYPE}</arg>
+<arg>${M_TYPE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.293920" elapsed="0.000335"/>
+</kw>
+<kw name="Get Variables" owner="BuiltIn">
+<arg>${DEVICE}</arg>
+<doc>Returns a dictionary containing all variables in the current scope.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.294377" elapsed="0.000421"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.295067" level="INFO">Run with Cloud Device	: TESTINGBOT</msg>
+<arg>Run with Cloud Device\t: ${DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.294922" elapsed="0.000197"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Run with Cloud Device\t: ${DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.295236" elapsed="0.000193"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.295933" level="INFO">${DEVICE} = TESTINGBOT</msg>
+<arg>${DEVICE}</arg>
+<arg>${DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.295641" elapsed="0.000344"/>
+</kw>
+<if>
+<branch type="IF" condition="('${DEVICE}'=='BROWSERSTACK')">
+<kw name="Log" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.296270" elapsed="0.000025"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.296407" elapsed="0.000023"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_DEVICE}</arg>
+<arg>${CD_DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.296543" elapsed="0.000022"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.296692" elapsed="0.000024"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.296823" elapsed="0.000022"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_OS}</arg>
+<arg>${CD_OS}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.296952" elapsed="0.000022"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.297079" elapsed="0.000022"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.297203" elapsed="0.000022"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.297338" elapsed="0.000023"/>
+</kw>
+<status status="NOT RUN" start="2025-04-09T05:11:14.296072" elapsed="0.001326"/>
+</branch>
+<status status="PASS" start="2025-04-09T05:11:14.296049" elapsed="0.001375"/>
+</if>
+<if>
+<branch type="IF" condition="('${DEVICE}'=='TESTINGBOT')">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.297815" level="INFO">CD_DEVICE		: Pixel 6a</msg>
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.297665" elapsed="0.000203"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.297982" elapsed="0.000194"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.298657" level="INFO">${CD_DEVICE} = Pixel 6a</msg>
+<arg>${CD_DEVICE}</arg>
+<arg>${CD_DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.298369" elapsed="0.000344"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.298997" level="INFO">CD_OS			: 13.0</msg>
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.298843" elapsed="0.000206"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.299164" elapsed="0.000192"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.299831" level="INFO">${CD_OS} = 13.0</msg>
+<arg>${CD_OS}</arg>
+<arg>${CD_OS}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.299548" elapsed="0.000335"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.300145" level="INFO">CD_APP_URL		: tb://8b01876066524052a5f30645</msg>
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.300003" elapsed="0.000194"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.300309" elapsed="0.000197"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.301018" level="INFO">${CD_APP_URL} = tb://8b01876066524052a5f30645</msg>
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.300730" elapsed="0.000339"/>
+</kw>
+<status status="PASS" start="2025-04-09T05:11:14.297486" elapsed="0.003624"/>
+</branch>
+<status status="PASS" start="2025-04-09T05:11:14.297467" elapsed="0.003670"/>
+</if>
+<status status="PASS" start="2025-04-09T05:11:14.289687" elapsed="0.011502"/>
+</kw>
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-04-09T05:11:14.490013" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-04-09T05:11:14.489703" elapsed="0.000551">No application is open</status>
+</kw>
+<msg time="2025-04-09T05:11:14.492551" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-04-09T05:11:14.492807" level="FAIL">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</msg>
+<arg>http://${TESTINGBOT_KEY}:${TESTINGBOT_SECRET}@hub.testingbot.com/wd/hub</arg>
+<arg>platformName=${M_TYPE}</arg>
+<arg>deviceName=${CD_DEVICE}</arg>
+<arg>version=${CD_OS}</arg>
+<arg>app=${CD_APP_URL}</arg>
+<arg>realDevice=true</arg>
+<arg>build=[${TIME_STAMP}][${ENV}][VERS_COMP] REKENINGKU FLUTTER</arg>
+<arg>name=${TEST_NAME}</arg>
+<arg>autoGrantPermissions=true</arg>
+<arg>automationName=UiAutomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-04-09T05:11:14.301299" elapsed="0.191780">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</status>
+</kw>
+<kw name="Click signin button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.493385" elapsed="0.000036"/>
+</kw>
+<kw name="Display sign in page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.493572" elapsed="0.000027"/>
+</kw>
+<kw name="Input signin email textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_EMAIL}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:14.493744" elapsed="0.000026"/>
+</kw>
+<kw name="Input signin password textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_PASSWORD}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:14.494019" elapsed="0.000027"/>
+</kw>
+<kw name="Click signin action button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.494190" elapsed="0.000026"/>
+</kw>
+<kw name="Display pin verification page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.494346" elapsed="0.000025"/>
+</kw>
+<kw name="Input pin verification textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_PIN}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:14.494513" elapsed="0.000026"/>
+</kw>
+<kw name="Display home page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.494674" elapsed="0.000025"/>
+</kw>
+<kw name="Check coachmark popup if showup" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.494832" elapsed="0.000026"/>
+</kw>
+<kw name="Check navbar home is selected" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.494995" elapsed="0.000026"/>
+</kw>
+<kw name="Click profile menu button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.495215" elapsed="0.000027"/>
+</kw>
+<kw name="Check profile page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.495404" elapsed="0.000026"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.495533" elapsed="0.000023"/>
+</kw>
+<tag>VERS_COMP</tag>
+<status status="FAIL" start="2025-04-09T05:11:14.287270" elapsed="0.208449">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</status>
+</test>
+<test id="s1-s1-s1-t4" name="ANDROID - v12.0 - Pixel 6 (Emulator)" line="99">
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.496815" level="INFO">${M_TYPE} = ANDROID</msg>
+<arg>${M_TYPE}</arg>
+<arg>ANDROID</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.496562" elapsed="0.000308"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.497207" level="INFO">${CD_DEVICE} = Pixel 6</msg>
+<arg>${CD_DEVICE}</arg>
+<arg>Pixel 6</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.497001" elapsed="0.000253"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.497569" level="INFO">${CD_OS} = 12.0</msg>
+<arg>${CD_OS}</arg>
+<arg>12.0</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.497376" elapsed="0.000239"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.497952" level="INFO">${CD_APP_URL} = tb://8b01876066524052a5f30645</msg>
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL_APK}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.497732" elapsed="0.000266"/>
+</kw>
+<kw name="Set data environment and device" owner="general">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.498751" level="INFO">
+LOG AutomatedTest</msg>
+<arg>\nLOG AutomatedTest</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.498633" elapsed="0.000171"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\nLOG AutomatedTest</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.498919" elapsed="0.000161"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.499475" level="INFO">Run on Environment	: PROD</msg>
+<arg>Run on Environment\t: ${ENV}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.499270" elapsed="0.000280"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Run on Environment\t: ${ENV}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.499690" elapsed="0.000196"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.500375" level="INFO">${ENV} = PROD</msg>
+<arg>${ENV}</arg>
+<arg>${ENV}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.500077" elapsed="0.000354"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.500713" level="INFO">TAG TEST		: VERS_COMP</msg>
+<arg>TAG TEST\t\t: ${TAG_TEST}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.500550" elapsed="0.000216"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TAG TEST\t\t: ${TAG_TEST}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.500888" elapsed="0.000192"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.501573" level="INFO">${TAG_TEST} = VERS_COMP</msg>
+<arg>${TAG_TEST}</arg>
+<arg>${TAG_TEST}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.501270" elapsed="0.000354"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.501890" level="INFO">Mobile Device Type	: ANDROID</msg>
+<arg>Mobile Device Type\t: ${M_TYPE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.501749" elapsed="0.000191"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Mobile Device Type\t: ${M_TYPE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.502060" elapsed="0.000190"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.502741" level="INFO">${M_TYPE} = ANDROID</msg>
+<arg>${M_TYPE}</arg>
+<arg>${M_TYPE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.502440" elapsed="0.000351"/>
+</kw>
+<kw name="Get Variables" owner="BuiltIn">
+<arg>${DEVICE}</arg>
+<doc>Returns a dictionary containing all variables in the current scope.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.502909" elapsed="0.000433"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.503614" level="INFO">Run with Cloud Device	: TESTINGBOT</msg>
+<arg>Run with Cloud Device\t: ${DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.503469" elapsed="0.000232"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Run with Cloud Device\t: ${DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.503821" elapsed="0.000192"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.504513" level="INFO">${DEVICE} = TESTINGBOT</msg>
+<arg>${DEVICE}</arg>
+<arg>${DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.504205" elapsed="0.000361"/>
+</kw>
+<if>
+<branch type="IF" condition="('${DEVICE}'=='BROWSERSTACK')">
+<kw name="Log" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.504884" elapsed="0.000025"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.505022" elapsed="0.000023"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_DEVICE}</arg>
+<arg>${CD_DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.505159" elapsed="0.000024"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.505295" elapsed="0.000022"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.505420" elapsed="0.000022"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_OS}</arg>
+<arg>${CD_OS}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.505679" elapsed="0.000024"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.505812" elapsed="0.000022"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.505938" elapsed="0.000022"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.506067" elapsed="0.000022"/>
+</kw>
+<status status="NOT RUN" start="2025-04-09T05:11:14.504676" elapsed="0.001448"/>
+</branch>
+<status status="PASS" start="2025-04-09T05:11:14.504646" elapsed="0.001506"/>
+</if>
+<if>
+<branch type="IF" condition="('${DEVICE}'=='TESTINGBOT')">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.506554" level="INFO">CD_DEVICE		: Pixel 6</msg>
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.506402" elapsed="0.000206"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.506734" elapsed="0.000198"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.507461" level="INFO">${CD_DEVICE} = Pixel 6</msg>
+<arg>${CD_DEVICE}</arg>
+<arg>${CD_DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.507128" elapsed="0.000387"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.507783" level="INFO">CD_OS			: 12.0</msg>
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.507637" elapsed="0.000207"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.507957" elapsed="0.000194"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.508653" level="INFO">${CD_OS} = 12.0</msg>
+<arg>${CD_OS}</arg>
+<arg>${CD_OS}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.508343" elapsed="0.000364"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.508969" level="INFO">CD_APP_URL		: tb://8b01876066524052a5f30645</msg>
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.508827" elapsed="0.000193"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.509133" elapsed="0.000191"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.509825" level="INFO">${CD_APP_URL} = tb://8b01876066524052a5f30645</msg>
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.509514" elapsed="0.000363"/>
+</kw>
+<status status="PASS" start="2025-04-09T05:11:14.506214" elapsed="0.003703"/>
+</branch>
+<status status="PASS" start="2025-04-09T05:11:14.506197" elapsed="0.003747"/>
+</if>
+<status status="PASS" start="2025-04-09T05:11:14.498368" elapsed="0.011627"/>
+</kw>
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-04-09T05:11:14.693617" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-04-09T05:11:14.693347" elapsed="0.000496">No application is open</status>
+</kw>
+<msg time="2025-04-09T05:11:14.696085" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-04-09T05:11:14.696389" level="FAIL">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</msg>
+<arg>http://${TESTINGBOT_KEY}:${TESTINGBOT_SECRET}@hub.testingbot.com/wd/hub</arg>
+<arg>platformName=${M_TYPE}</arg>
+<arg>deviceName=${CD_DEVICE}</arg>
+<arg>version=${CD_OS}</arg>
+<arg>app=${CD_APP_URL}</arg>
+<arg>realDevice=true</arg>
+<arg>build=[${TIME_STAMP}][${ENV}][VERS_COMP] REKENINGKU FLUTTER</arg>
+<arg>name=${TEST_NAME}</arg>
+<arg>autoGrantPermissions=true</arg>
+<arg>automationName=UiAutomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-04-09T05:11:14.510107" elapsed="0.186454">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</status>
+</kw>
+<kw name="Click signin button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.696814" elapsed="0.000035"/>
+</kw>
+<kw name="Display sign in page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.697000" elapsed="0.000027"/>
+</kw>
+<kw name="Input signin email textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_EMAIL}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:14.697170" elapsed="0.000026"/>
+</kw>
+<kw name="Input signin password textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_PASSWORD}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:14.697438" elapsed="0.000027"/>
+</kw>
+<kw name="Click signin action button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.697652" elapsed="0.000028"/>
+</kw>
+<kw name="Display pin verification page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.697852" elapsed="0.000029"/>
+</kw>
+<kw name="Input pin verification textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_PIN}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:14.698025" elapsed="0.000025"/>
+</kw>
+<kw name="Display home page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.698183" elapsed="0.000024"/>
+</kw>
+<kw name="Check coachmark popup if showup" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.698333" elapsed="0.000024"/>
+</kw>
+<kw name="Check navbar home is selected" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.698486" elapsed="0.000024"/>
+</kw>
+<kw name="Click profile menu button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.698694" elapsed="0.000026"/>
+</kw>
+<kw name="Check profile page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.698877" elapsed="0.000026"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.699005" elapsed="0.000022"/>
+</kw>
+<tag>VERS_COMP</tag>
+<status status="FAIL" start="2025-04-09T05:11:14.496013" elapsed="0.203169">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</status>
+</test>
+<test id="s1-s1-s1-t5" name="ANDROID - v11.0 - Galaxy S21 (Emulator)" line="130">
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.700429" level="INFO">${M_TYPE} = ANDROID</msg>
+<arg>${M_TYPE}</arg>
+<arg>ANDROID</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.700207" elapsed="0.000277"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.700846" level="INFO">${CD_DEVICE} = Galaxy S21</msg>
+<arg>${CD_DEVICE}</arg>
+<arg>Galaxy S21</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.700614" elapsed="0.000280"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.701233" level="INFO">${CD_OS} = 11.0</msg>
+<arg>${CD_OS}</arg>
+<arg>11.0</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.701025" elapsed="0.000254"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.701614" level="INFO">${CD_APP_URL} = tb://8b01876066524052a5f30645</msg>
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL_APK}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.701398" elapsed="0.000260"/>
+</kw>
+<kw name="Set data environment and device" owner="general">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.702565" level="INFO">
+LOG AutomatedTest</msg>
+<arg>\nLOG AutomatedTest</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.702449" elapsed="0.000169"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\nLOG AutomatedTest</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.702734" elapsed="0.000159"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.703288" level="INFO">Run on Environment	: PROD</msg>
+<arg>Run on Environment\t: ${ENV}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.703081" elapsed="0.000279"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Run on Environment\t: ${ENV}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.703524" elapsed="0.000197"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.704205" level="INFO">${ENV} = PROD</msg>
+<arg>${ENV}</arg>
+<arg>${ENV}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.703911" elapsed="0.000345"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.704524" level="INFO">TAG TEST		: VERS_COMP</msg>
+<arg>TAG TEST\t\t: ${TAG_TEST}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.704381" elapsed="0.000193"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TAG TEST\t\t: ${TAG_TEST}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.704706" elapsed="0.000191"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.705337" level="INFO">${TAG_TEST} = VERS_COMP</msg>
+<arg>${TAG_TEST}</arg>
+<arg>${TAG_TEST}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.705096" elapsed="0.000290"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.705642" level="INFO">Mobile Device Type	: ANDROID</msg>
+<arg>Mobile Device Type\t: ${M_TYPE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.705504" elapsed="0.000186"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Mobile Device Type\t: ${M_TYPE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.705801" elapsed="0.000186"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.706400" level="INFO">${M_TYPE} = ANDROID</msg>
+<arg>${M_TYPE}</arg>
+<arg>${M_TYPE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.706168" elapsed="0.000279"/>
+</kw>
+<kw name="Get Variables" owner="BuiltIn">
+<arg>${DEVICE}</arg>
+<doc>Returns a dictionary containing all variables in the current scope.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.706562" elapsed="0.000418"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.707244" level="INFO">Run with Cloud Device	: TESTINGBOT</msg>
+<arg>Run with Cloud Device\t: ${DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.707103" elapsed="0.000190"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Run with Cloud Device\t: ${DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.707405" elapsed="0.000188"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.708023" level="INFO">${DEVICE} = TESTINGBOT</msg>
+<arg>${DEVICE}</arg>
+<arg>${DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.707791" elapsed="0.000281"/>
+</kw>
+<if>
+<branch type="IF" condition="('${DEVICE}'=='BROWSERSTACK')">
+<kw name="Log" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.708360" elapsed="0.000024"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.708495" elapsed="0.000022"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_DEVICE}</arg>
+<arg>${CD_DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.708626" elapsed="0.000039"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.708777" elapsed="0.000022"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.708901" elapsed="0.000022"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_OS}</arg>
+<arg>${CD_OS}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.709073" elapsed="0.000024"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.709207" elapsed="0.000022"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.709334" elapsed="0.000021"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.709463" elapsed="0.000021"/>
+</kw>
+<status status="NOT RUN" start="2025-04-09T05:11:14.708160" elapsed="0.001360"/>
+</branch>
+<status status="PASS" start="2025-04-09T05:11:14.708134" elapsed="0.001414"/>
+</if>
+<if>
+<branch type="IF" condition="('${DEVICE}'=='TESTINGBOT')">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.709948" level="INFO">CD_DEVICE		: Galaxy S21</msg>
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.709797" elapsed="0.000204"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.710115" elapsed="0.000194"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.710741" level="INFO">${CD_DEVICE} = Galaxy S21</msg>
+<arg>${CD_DEVICE}</arg>
+<arg>${CD_DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.710498" elapsed="0.000292"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.711052" level="INFO">CD_OS			: 11.0</msg>
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.710909" elapsed="0.000194"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.711216" elapsed="0.000188"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.711844" level="INFO">${CD_OS} = 11.0</msg>
+<arg>${CD_OS}</arg>
+<arg>${CD_OS}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.711587" elapsed="0.000305"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.712151" level="INFO">CD_APP_URL		: tb://8b01876066524052a5f30645</msg>
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.712007" elapsed="0.000195"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.712316" elapsed="0.000187"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.712960" level="INFO">${CD_APP_URL} = tb://8b01876066524052a5f30645</msg>
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.712712" elapsed="0.000297"/>
+</kw>
+<status status="PASS" start="2025-04-09T05:11:14.709609" elapsed="0.003440"/>
+</branch>
+<status status="PASS" start="2025-04-09T05:11:14.709591" elapsed="0.003486"/>
+</if>
+<status status="PASS" start="2025-04-09T05:11:14.702036" elapsed="0.011093"/>
+</kw>
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-04-09T05:11:14.963438" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-04-09T05:11:14.963178" elapsed="0.000487">No application is open</status>
+</kw>
+<msg time="2025-04-09T05:11:14.965971" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-04-09T05:11:14.966172" level="FAIL">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</msg>
+<arg>http://${TESTINGBOT_KEY}:${TESTINGBOT_SECRET}@hub.testingbot.com/wd/hub</arg>
+<arg>platformName=${M_TYPE}</arg>
+<arg>deviceName=${CD_DEVICE}</arg>
+<arg>version=${CD_OS}</arg>
+<arg>app=${CD_APP_URL}</arg>
+<arg>realDevice=true</arg>
+<arg>build=[${TIME_STAMP}][${ENV}][VERS_COMP] REKENINGKU FLUTTER</arg>
+<arg>name=${TEST_NAME}</arg>
+<arg>autoGrantPermissions=true</arg>
+<arg>automationName=UiAutomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-04-09T05:11:14.713238" elapsed="0.253161">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</status>
+</kw>
+<kw name="Click signin button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.966708" elapsed="0.000040"/>
+</kw>
+<kw name="Display sign in page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.966901" elapsed="0.000028"/>
+</kw>
+<kw name="Input signin email textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_EMAIL}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:14.967073" elapsed="0.000027"/>
+</kw>
+<kw name="Input signin password textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_PASSWORD}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:14.967351" elapsed="0.000027"/>
+</kw>
+<kw name="Click signin action button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.967514" elapsed="0.000025"/>
+</kw>
+<kw name="Display pin verification page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.967668" elapsed="0.000025"/>
+</kw>
+<kw name="Input pin verification textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_PIN}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:14.967991" elapsed="0.000027"/>
+</kw>
+<kw name="Display home page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.968157" elapsed="0.000025"/>
+</kw>
+<kw name="Check coachmark popup if showup" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.968322" elapsed="0.000040"/>
+</kw>
+<kw name="Check navbar home is selected" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.968610" elapsed="0.000057"/>
+</kw>
+<kw name="Click profile menu button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.968959" elapsed="0.000029"/>
+</kw>
+<kw name="Check profile page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:14.969148" elapsed="0.000025"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.969282" elapsed="0.000023"/>
+</kw>
+<tag>VERS_COMP</tag>
+<status status="FAIL" start="2025-04-09T05:11:14.699761" elapsed="0.269709">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</status>
+</test>
+<test id="s1-s1-s1-t6" name="ANDROID - v10.0 - Galaxy S20 (Emulator)" line="161">
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.970544" level="INFO">${M_TYPE} = ANDROID</msg>
+<arg>${M_TYPE}</arg>
+<arg>ANDROID</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.970300" elapsed="0.000299"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.970927" level="INFO">${CD_DEVICE} = Galaxy S20</msg>
+<arg>${CD_DEVICE}</arg>
+<arg>Galaxy S20</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.970726" elapsed="0.000247"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.971286" level="INFO">${CD_OS} = 10.0</msg>
+<arg>${CD_OS}</arg>
+<arg>10.0</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.971095" elapsed="0.000237"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.971669" level="INFO">${CD_APP_URL} = tb://8b01876066524052a5f30645</msg>
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL_APK}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.971450" elapsed="0.000265"/>
+</kw>
+<kw name="Set data environment and device" owner="general">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.972480" level="INFO">
+LOG AutomatedTest</msg>
+<arg>\nLOG AutomatedTest</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.972359" elapsed="0.000172"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\nLOG AutomatedTest</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.972665" elapsed="0.000171"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.973208" level="INFO">Run on Environment	: PROD</msg>
+<arg>Run on Environment\t: ${ENV}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.973021" elapsed="0.000240"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Run on Environment\t: ${ENV}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.973377" elapsed="0.000196"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.974020" level="INFO">${ENV} = PROD</msg>
+<arg>${ENV}</arg>
+<arg>${ENV}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.973771" elapsed="0.000299"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.974334" level="INFO">TAG TEST		: VERS_COMP</msg>
+<arg>TAG TEST\t\t: ${TAG_TEST}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.974189" elapsed="0.000195"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TAG TEST\t\t: ${TAG_TEST}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.974495" elapsed="0.000189"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.975129" level="INFO">${TAG_TEST} = VERS_COMP</msg>
+<arg>${TAG_TEST}</arg>
+<arg>${TAG_TEST}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.974879" elapsed="0.000308"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.975454" level="INFO">Mobile Device Type	: ANDROID</msg>
+<arg>Mobile Device Type\t: ${M_TYPE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.975311" elapsed="0.000193"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Mobile Device Type\t: ${M_TYPE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.975616" elapsed="0.000188"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.976242" level="INFO">${M_TYPE} = ANDROID</msg>
+<arg>${M_TYPE}</arg>
+<arg>${M_TYPE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.975995" elapsed="0.000294"/>
+</kw>
+<kw name="Get Variables" owner="BuiltIn">
+<arg>${DEVICE}</arg>
+<doc>Returns a dictionary containing all variables in the current scope.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.976409" elapsed="0.000442"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.977119" level="INFO">Run with Cloud Device	: TESTINGBOT</msg>
+<arg>Run with Cloud Device\t: ${DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.976974" elapsed="0.000195"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Run with Cloud Device\t: ${DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.977283" elapsed="0.000192"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.977913" level="INFO">${DEVICE} = TESTINGBOT</msg>
+<arg>${DEVICE}</arg>
+<arg>${DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.977663" elapsed="0.000299"/>
+</kw>
+<if>
+<branch type="IF" condition="('${DEVICE}'=='BROWSERSTACK')">
+<kw name="Log" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.978284" elapsed="0.000025"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.978421" elapsed="0.000023"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_DEVICE}</arg>
+<arg>${CD_DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.978553" elapsed="0.000022"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.978687" elapsed="0.000023"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.978812" elapsed="0.000022"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_OS}</arg>
+<arg>${CD_OS}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.978939" elapsed="0.000021"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.979067" elapsed="0.000021"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.979188" elapsed="0.000021"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:14.979312" elapsed="0.000021"/>
+</kw>
+<status status="NOT RUN" start="2025-04-09T05:11:14.978059" elapsed="0.001307"/>
+</branch>
+<status status="PASS" start="2025-04-09T05:11:14.978030" elapsed="0.001364"/>
+</if>
+<if>
+<branch type="IF" condition="('${DEVICE}'=='TESTINGBOT')">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.979795" level="INFO">CD_DEVICE		: Galaxy S20</msg>
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.979637" elapsed="0.000210"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.979959" elapsed="0.000196"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.980679" level="INFO">${CD_DEVICE} = Galaxy S20</msg>
+<arg>${CD_DEVICE}</arg>
+<arg>${CD_DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.980395" elapsed="0.000335"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.980998" level="INFO">CD_OS			: 10.0</msg>
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.980851" elapsed="0.000198"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.981164" elapsed="0.000195"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.981803" level="INFO">${CD_OS} = 10.0</msg>
+<arg>${CD_OS}</arg>
+<arg>${CD_OS}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.981554" elapsed="0.000299"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.982119" level="INFO">CD_APP_URL		: tb://8b01876066524052a5f30645</msg>
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.981973" elapsed="0.000197"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.982285" elapsed="0.000192"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:14.982922" level="INFO">${CD_APP_URL} = tb://8b01876066524052a5f30645</msg>
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:14.982669" elapsed="0.000301"/>
+</kw>
+<status status="PASS" start="2025-04-09T05:11:14.979455" elapsed="0.003555"/>
+</branch>
+<status status="PASS" start="2025-04-09T05:11:14.979438" elapsed="0.003601"/>
+</if>
+<status status="PASS" start="2025-04-09T05:11:14.972097" elapsed="0.011001"/>
+</kw>
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-04-09T05:11:15.199454" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-04-09T05:11:15.199109" elapsed="0.000589">No application is open</status>
+</kw>
+<msg time="2025-04-09T05:11:15.201984" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-04-09T05:11:15.202203" level="FAIL">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</msg>
+<arg>http://${TESTINGBOT_KEY}:${TESTINGBOT_SECRET}@hub.testingbot.com/wd/hub</arg>
+<arg>platformName=${M_TYPE}</arg>
+<arg>deviceName=${CD_DEVICE}</arg>
+<arg>version=${CD_OS}</arg>
+<arg>app=${CD_APP_URL}</arg>
+<arg>realDevice=true</arg>
+<arg>build=[${TIME_STAMP}][${ENV}][VERS_COMP] REKENINGKU FLUTTER</arg>
+<arg>name=${TEST_NAME}</arg>
+<arg>autoGrantPermissions=true</arg>
+<arg>automationName=UiAutomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-04-09T05:11:14.983214" elapsed="0.219194">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</status>
+</kw>
+<kw name="Click signin button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.202652" elapsed="0.000036"/>
+</kw>
+<kw name="Display sign in page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.202836" elapsed="0.000027"/>
+</kw>
+<kw name="Input signin email textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_EMAIL}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:15.203006" elapsed="0.000026"/>
+</kw>
+<kw name="Input signin password textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_PASSWORD}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:15.203281" elapsed="0.000028"/>
+</kw>
+<kw name="Click signin action button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.203447" elapsed="0.000026"/>
+</kw>
+<kw name="Display pin verification page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.203599" elapsed="0.000025"/>
+</kw>
+<kw name="Input pin verification textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_PIN}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:15.203769" elapsed="0.000026"/>
+</kw>
+<kw name="Display home page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.203927" elapsed="0.000025"/>
+</kw>
+<kw name="Check coachmark popup if showup" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.204078" elapsed="0.000024"/>
+</kw>
+<kw name="Check navbar home is selected" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.204238" elapsed="0.000026"/>
+</kw>
+<kw name="Click profile menu button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.204468" elapsed="0.000033"/>
+</kw>
+<kw name="Check profile page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.204678" elapsed="0.000029"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.204826" elapsed="0.000023"/>
+</kw>
+<tag>VERS_COMP</tag>
+<status status="FAIL" start="2025-04-09T05:11:14.969766" elapsed="0.235245">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</status>
+</test>
+<test id="s1-s1-s1-t7" name="ANDROID - v9.0 - Galaxy S9 (Emulator)" line="192">
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.206000" level="INFO">${M_TYPE} = ANDROID</msg>
+<arg>${M_TYPE}</arg>
+<arg>ANDROID</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.205767" elapsed="0.000289"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.206389" level="INFO">${CD_DEVICE} = Galaxy S9</msg>
+<arg>${CD_DEVICE}</arg>
+<arg>Galaxy S9</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.206183" elapsed="0.000252"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.206807" level="INFO">${CD_OS} = 9.0</msg>
+<arg>${CD_OS}</arg>
+<arg>9.0</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.206558" elapsed="0.000298"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.207241" level="INFO">${CD_APP_URL} = tb://8b01876066524052a5f30645</msg>
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL_APK}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.206984" elapsed="0.000306"/>
+</kw>
+<kw name="Set data environment and device" owner="general">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.208115" level="INFO">
+LOG AutomatedTest</msg>
+<arg>\nLOG AutomatedTest</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.207995" elapsed="0.000173"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\nLOG AutomatedTest</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.208283" elapsed="0.000210"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.208876" level="INFO">Run on Environment	: PROD</msg>
+<arg>Run on Environment\t: ${ENV}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.208703" elapsed="0.000226"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Run on Environment\t: ${ENV}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.209047" elapsed="0.000191"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.209666" level="INFO">${ENV} = PROD</msg>
+<arg>${ENV}</arg>
+<arg>${ENV}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.209430" elapsed="0.000285"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.209981" level="INFO">TAG TEST		: VERS_COMP</msg>
+<arg>TAG TEST\t\t: ${TAG_TEST}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.209834" elapsed="0.000199"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TAG TEST\t\t: ${TAG_TEST}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.210150" elapsed="0.000197"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.210784" level="INFO">${TAG_TEST} = VERS_COMP</msg>
+<arg>${TAG_TEST}</arg>
+<arg>${TAG_TEST}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.210530" elapsed="0.000302"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.211099" level="INFO">Mobile Device Type	: ANDROID</msg>
+<arg>Mobile Device Type\t: ${M_TYPE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.210957" elapsed="0.000192"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Mobile Device Type\t: ${M_TYPE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.211263" elapsed="0.000185"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.211889" level="INFO">${M_TYPE} = ANDROID</msg>
+<arg>${M_TYPE}</arg>
+<arg>${M_TYPE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.211641" elapsed="0.000296"/>
+</kw>
+<kw name="Get Variables" owner="BuiltIn">
+<arg>${DEVICE}</arg>
+<doc>Returns a dictionary containing all variables in the current scope.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.212057" elapsed="0.000415"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.212765" level="INFO">Run with Cloud Device	: TESTINGBOT</msg>
+<arg>Run with Cloud Device\t: ${DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.212599" elapsed="0.000217"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Run with Cloud Device\t: ${DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.212931" elapsed="0.000188"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.213684" level="INFO">${DEVICE} = TESTINGBOT</msg>
+<arg>${DEVICE}</arg>
+<arg>${DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.213309" elapsed="0.000424"/>
+</kw>
+<if>
+<branch type="IF" condition="('${DEVICE}'=='BROWSERSTACK')">
+<kw name="Log" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.214040" elapsed="0.000025"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.214175" elapsed="0.000023"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_DEVICE}</arg>
+<arg>${CD_DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.214307" elapsed="0.000022"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.214442" elapsed="0.000023"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.214577" elapsed="0.000022"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_OS}</arg>
+<arg>${CD_OS}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.214706" elapsed="0.000022"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.214835" elapsed="0.000022"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.214961" elapsed="0.000022"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.215106" elapsed="0.000022"/>
+</kw>
+<status status="NOT RUN" start="2025-04-09T05:11:15.213831" elapsed="0.001332"/>
+</branch>
+<status status="PASS" start="2025-04-09T05:11:15.213804" elapsed="0.001386"/>
+</if>
+<if>
+<branch type="IF" condition="('${DEVICE}'=='TESTINGBOT')">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.215582" level="INFO">CD_DEVICE		: Galaxy S9</msg>
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.215431" elapsed="0.000204"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.215749" elapsed="0.000196"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.216386" level="INFO">${CD_DEVICE} = Galaxy S9</msg>
+<arg>${CD_DEVICE}</arg>
+<arg>${CD_DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.216136" elapsed="0.000299"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.216738" level="INFO">CD_OS			: 9.0</msg>
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.216555" elapsed="0.000234"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.216904" elapsed="0.000192"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.217564" level="INFO">${CD_OS} = 9.0</msg>
+<arg>${CD_OS}</arg>
+<arg>${CD_OS}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.217287" elapsed="0.000327"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.217874" level="INFO">CD_APP_URL		: tb://8b01876066524052a5f30645</msg>
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.217732" elapsed="0.000191"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.218033" elapsed="0.000188"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.218730" level="INFO">${CD_APP_URL} = tb://8b01876066524052a5f30645</msg>
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.218455" elapsed="0.000325"/>
+</kw>
+<status status="PASS" start="2025-04-09T05:11:15.215252" elapsed="0.003568"/>
+</branch>
+<status status="PASS" start="2025-04-09T05:11:15.215234" elapsed="0.003612"/>
+</if>
+<status status="PASS" start="2025-04-09T05:11:15.207718" elapsed="0.011180"/>
+</kw>
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-04-09T05:11:15.417495" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-04-09T05:11:15.417199" elapsed="0.000533">No application is open</status>
+</kw>
+<msg time="2025-04-09T05:11:15.420002" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-04-09T05:11:15.420186" level="FAIL">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</msg>
+<arg>http://${TESTINGBOT_KEY}:${TESTINGBOT_SECRET}@hub.testingbot.com/wd/hub</arg>
+<arg>platformName=${M_TYPE}</arg>
+<arg>deviceName=${CD_DEVICE}</arg>
+<arg>version=${CD_OS}</arg>
+<arg>app=${CD_APP_URL}</arg>
+<arg>realDevice=true</arg>
+<arg>build=[${TIME_STAMP}][${ENV}][VERS_COMP] REKENINGKU FLUTTER</arg>
+<arg>name=${TEST_NAME}</arg>
+<arg>autoGrantPermissions=true</arg>
+<arg>automationName=UiAutomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-04-09T05:11:15.219006" elapsed="0.201392">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</status>
+</kw>
+<kw name="Click signin button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.420716" elapsed="0.000036"/>
+</kw>
+<kw name="Display sign in page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.420904" elapsed="0.000028"/>
+</kw>
+<kw name="Input signin email textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_EMAIL}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:15.421081" elapsed="0.000028"/>
+</kw>
+<kw name="Input signin password textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_PASSWORD}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:15.421361" elapsed="0.000027"/>
+</kw>
+<kw name="Click signin action button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.421526" elapsed="0.000026"/>
+</kw>
+<kw name="Display pin verification page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.421683" elapsed="0.000026"/>
+</kw>
+<kw name="Input pin verification textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_PIN}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:15.421849" elapsed="0.000025"/>
+</kw>
+<kw name="Display home page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.422007" elapsed="0.000025"/>
+</kw>
+<kw name="Check coachmark popup if showup" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.422157" elapsed="0.000025"/>
+</kw>
+<kw name="Check navbar home is selected" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.422312" elapsed="0.000025"/>
+</kw>
+<kw name="Click profile menu button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.422520" elapsed="0.000027"/>
+</kw>
+<kw name="Check profile page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.422706" elapsed="0.000026"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.422836" elapsed="0.000023"/>
+</kw>
+<tag>VERS_COMP</tag>
+<status status="FAIL" start="2025-04-09T05:11:15.205302" elapsed="0.217719">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</status>
+</test>
+<test id="s1-s1-s1-t8" name="ANDROID - v8.0 - Pixel 2 XL (Emulator)" line="223">
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.424167" level="INFO">${M_TYPE} = ANDROID</msg>
+<arg>${M_TYPE}</arg>
+<arg>ANDROID</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.423916" elapsed="0.000307"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.424551" level="INFO">${CD_DEVICE} = Pixel 2 XL</msg>
+<arg>${CD_DEVICE}</arg>
+<arg>Pixel 2 XL</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.424351" elapsed="0.000247"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.424947" level="INFO">${CD_OS} = 8.0</msg>
+<arg>${CD_OS}</arg>
+<arg>8.0</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.424752" elapsed="0.000241"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.425330" level="INFO">${CD_APP_URL} = tb://8b01876066524052a5f30645</msg>
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL_APK}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.425116" elapsed="0.000259"/>
+</kw>
+<kw name="Set data environment and device" owner="general">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.426300" level="INFO">
+LOG AutomatedTest</msg>
+<arg>\nLOG AutomatedTest</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.426182" elapsed="0.000169"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\nLOG AutomatedTest</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.426468" elapsed="0.000158"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.427022" level="INFO">Run on Environment	: PROD</msg>
+<arg>Run on Environment\t: ${ENV}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.426812" elapsed="0.000282"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Run on Environment\t: ${ENV}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.427268" elapsed="0.000229"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.427969" level="INFO">${ENV} = PROD</msg>
+<arg>${ENV}</arg>
+<arg>${ENV}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.427697" elapsed="0.000322"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.428289" level="INFO">TAG TEST		: VERS_COMP</msg>
+<arg>TAG TEST\t\t: ${TAG_TEST}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.428141" elapsed="0.000199"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TAG TEST\t\t: ${TAG_TEST}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.428456" elapsed="0.000204"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.429151" level="INFO">${TAG_TEST} = VERS_COMP</msg>
+<arg>${TAG_TEST}</arg>
+<arg>${TAG_TEST}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.428868" elapsed="0.000333"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.429509" level="INFO">Mobile Device Type	: ANDROID</msg>
+<arg>Mobile Device Type\t: ${M_TYPE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.429367" elapsed="0.000192"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Mobile Device Type\t: ${M_TYPE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.429677" elapsed="0.000187"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.430335" level="INFO">${M_TYPE} = ANDROID</msg>
+<arg>${M_TYPE}</arg>
+<arg>${M_TYPE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.430054" elapsed="0.000331"/>
+</kw>
+<kw name="Get Variables" owner="BuiltIn">
+<arg>${DEVICE}</arg>
+<doc>Returns a dictionary containing all variables in the current scope.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.430504" elapsed="0.000429"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.431200" level="INFO">Run with Cloud Device	: TESTINGBOT</msg>
+<arg>Run with Cloud Device\t: ${DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.431056" elapsed="0.000194"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Run with Cloud Device\t: ${DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.431365" elapsed="0.000190"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.432036" level="INFO">${DEVICE} = TESTINGBOT</msg>
+<arg>${DEVICE}</arg>
+<arg>${DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.431758" elapsed="0.000328"/>
+</kw>
+<if>
+<branch type="IF" condition="('${DEVICE}'=='BROWSERSTACK')">
+<kw name="Log" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.432386" elapsed="0.000023"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.432519" elapsed="0.000022"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_DEVICE}</arg>
+<arg>${CD_DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.432676" elapsed="0.000024"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.432809" elapsed="0.000021"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.432931" elapsed="0.000021"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_OS}</arg>
+<arg>${CD_OS}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.433056" elapsed="0.000022"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.433181" elapsed="0.000020"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.433303" elapsed="0.000022"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.433431" elapsed="0.000021"/>
+</kw>
+<status status="NOT RUN" start="2025-04-09T05:11:15.432178" elapsed="0.001309"/>
+</branch>
+<status status="PASS" start="2025-04-09T05:11:15.432151" elapsed="0.001364"/>
+</if>
+<if>
+<branch type="IF" condition="('${DEVICE}'=='TESTINGBOT')">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.433933" level="INFO">CD_DEVICE		: Pixel 2 XL</msg>
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.433769" elapsed="0.000216"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.434098" elapsed="0.000194"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.434772" level="INFO">${CD_DEVICE} = Pixel 2 XL</msg>
+<arg>${CD_DEVICE}</arg>
+<arg>${CD_DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.434482" elapsed="0.000340"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.435090" level="INFO">CD_OS			: 8.0</msg>
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.434946" elapsed="0.000192"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.435250" elapsed="0.000189"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.435911" level="INFO">${CD_OS} = 8.0</msg>
+<arg>${CD_OS}</arg>
+<arg>${CD_OS}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.435634" elapsed="0.000332"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.436231" level="INFO">CD_APP_URL		: tb://8b01876066524052a5f30645</msg>
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.436089" elapsed="0.000193"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.436404" elapsed="0.000188"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.437097" level="INFO">${CD_APP_URL} = tb://8b01876066524052a5f30645</msg>
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.436804" elapsed="0.000344"/>
+</kw>
+<status status="PASS" start="2025-04-09T05:11:15.433577" elapsed="0.003611"/>
+</branch>
+<status status="PASS" start="2025-04-09T05:11:15.433559" elapsed="0.003655"/>
+</if>
+<status status="PASS" start="2025-04-09T05:11:15.425905" elapsed="0.011360"/>
+</kw>
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-04-09T05:11:15.687667" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-04-09T05:11:15.687400" elapsed="0.000506">No application is open</status>
+</kw>
+<msg time="2025-04-09T05:11:15.690213" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-04-09T05:11:15.690398" level="FAIL">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</msg>
+<arg>http://${TESTINGBOT_KEY}:${TESTINGBOT_SECRET}@hub.testingbot.com/wd/hub</arg>
+<arg>platformName=${M_TYPE}</arg>
+<arg>deviceName=${CD_DEVICE}</arg>
+<arg>version=${CD_OS}</arg>
+<arg>app=${CD_APP_URL}</arg>
+<arg>realDevice=true</arg>
+<arg>build=[${TIME_STAMP}][${ENV}][VERS_COMP] REKENINGKU FLUTTER</arg>
+<arg>name=${TEST_NAME}</arg>
+<arg>autoGrantPermissions=true</arg>
+<arg>automationName=UiAutomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-04-09T05:11:15.437374" elapsed="0.253238">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</status>
+</kw>
+<kw name="Click signin button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.690947" elapsed="0.000036"/>
+</kw>
+<kw name="Display sign in page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.691134" elapsed="0.000027"/>
+</kw>
+<kw name="Input signin email textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_EMAIL}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:15.691309" elapsed="0.000027"/>
+</kw>
+<kw name="Input signin password textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_PASSWORD}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:15.693075" elapsed="0.000034"/>
+</kw>
+<kw name="Click signin action button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.693268" elapsed="0.000029"/>
+</kw>
+<kw name="Display pin verification page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.693431" elapsed="0.000025"/>
+</kw>
+<kw name="Input pin verification textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_PIN}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:15.693596" elapsed="0.000027"/>
+</kw>
+<kw name="Display home page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.693769" elapsed="0.000025"/>
+</kw>
+<kw name="Check coachmark popup if showup" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.693926" elapsed="0.000025"/>
+</kw>
+<kw name="Check navbar home is selected" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.694080" elapsed="0.000024"/>
+</kw>
+<kw name="Click profile menu button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.694291" elapsed="0.000027"/>
+</kw>
+<kw name="Check profile page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.694473" elapsed="0.000025"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.694600" elapsed="0.000023"/>
+</kw>
+<tag>VERS_COMP</tag>
+<status status="FAIL" start="2025-04-09T05:11:15.423335" elapsed="0.271446">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</status>
+</test>
+<test id="s1-s1-s1-t9" name="ANDROID - v7.1 - Pixel 2 (Emulator)" line="254">
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.695906" level="INFO">${M_TYPE} = ANDROID</msg>
+<arg>${M_TYPE}</arg>
+<arg>ANDROID</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.695647" elapsed="0.000314"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.696297" level="INFO">${CD_DEVICE} = Pixel 2</msg>
+<arg>${CD_DEVICE}</arg>
+<arg>Pixel 2</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.696090" elapsed="0.000255"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.696707" level="INFO">${CD_OS} = 7.1</msg>
+<arg>${CD_OS}</arg>
+<arg>7.1</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.696469" elapsed="0.000298"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.697122" level="INFO">${CD_APP_URL} = tb://8b01876066524052a5f30645</msg>
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL_APK}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.696895" elapsed="0.000274"/>
+</kw>
+<kw name="Set data environment and device" owner="general">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.697901" level="INFO">
+LOG AutomatedTest</msg>
+<arg>\nLOG AutomatedTest</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.697787" elapsed="0.000166"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\nLOG AutomatedTest</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.698067" elapsed="0.000158"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.698616" level="INFO">Run on Environment	: PROD</msg>
+<arg>Run on Environment\t: ${ENV}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.698409" elapsed="0.000280"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Run on Environment\t: ${ENV}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.698904" elapsed="0.000219"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.699591" level="INFO">${ENV} = PROD</msg>
+<arg>${ENV}</arg>
+<arg>${ENV}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.699314" elapsed="0.000327"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.699905" level="INFO">TAG TEST		: VERS_COMP</msg>
+<arg>TAG TEST\t\t: ${TAG_TEST}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.699762" elapsed="0.000193"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TAG TEST\t\t: ${TAG_TEST}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.700067" elapsed="0.000189"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.700753" level="INFO">${TAG_TEST} = VERS_COMP</msg>
+<arg>${TAG_TEST}</arg>
+<arg>${TAG_TEST}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.700445" elapsed="0.000360"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.701069" level="INFO">Mobile Device Type	: ANDROID</msg>
+<arg>Mobile Device Type\t: ${M_TYPE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.700927" elapsed="0.000191"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Mobile Device Type\t: ${M_TYPE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.701231" elapsed="0.000187"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.701888" level="INFO">${M_TYPE} = ANDROID</msg>
+<arg>${M_TYPE}</arg>
+<arg>${M_TYPE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.701606" elapsed="0.000331"/>
+</kw>
+<kw name="Get Variables" owner="BuiltIn">
+<arg>${DEVICE}</arg>
+<doc>Returns a dictionary containing all variables in the current scope.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.702060" elapsed="0.000414"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.702743" level="INFO">Run with Cloud Device	: TESTINGBOT</msg>
+<arg>Run with Cloud Device\t: ${DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.702597" elapsed="0.000198"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Run with Cloud Device\t: ${DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.702910" elapsed="0.000189"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.703608" level="INFO">${DEVICE} = TESTINGBOT</msg>
+<arg>${DEVICE}</arg>
+<arg>${DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.703290" elapsed="0.000371"/>
+</kw>
+<if>
+<branch type="IF" condition="('${DEVICE}'=='BROWSERSTACK')">
+<kw name="Log" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.703987" elapsed="0.000025"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.704124" elapsed="0.000023"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_DEVICE}</arg>
+<arg>${CD_DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.704257" elapsed="0.000022"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.704385" elapsed="0.000022"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.704510" elapsed="0.000021"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_OS}</arg>
+<arg>${CD_OS}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.704660" elapsed="0.000025"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.704796" elapsed="0.000022"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.704921" elapsed="0.000022"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.705049" elapsed="0.000021"/>
+</kw>
+<status status="NOT RUN" start="2025-04-09T05:11:15.703773" elapsed="0.001332"/>
+</branch>
+<status status="PASS" start="2025-04-09T05:11:15.703746" elapsed="0.001387"/>
+</if>
+<if>
+<branch type="IF" condition="('${DEVICE}'=='TESTINGBOT')">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.705524" level="INFO">CD_DEVICE		: Pixel 2</msg>
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.705372" elapsed="0.000205"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.705691" elapsed="0.000194"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.706365" level="INFO">${CD_DEVICE} = Pixel 2</msg>
+<arg>${CD_DEVICE}</arg>
+<arg>${CD_DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.706077" elapsed="0.000339"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.706691" level="INFO">CD_OS			: 7.1</msg>
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.706536" elapsed="0.000206"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.706855" elapsed="0.000191"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.707513" level="INFO">${CD_OS} = 7.1</msg>
+<arg>${CD_OS}</arg>
+<arg>${CD_OS}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.707237" elapsed="0.000326"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.707828" level="INFO">CD_APP_URL		: tb://8b01876066524052a5f30645</msg>
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.707686" elapsed="0.000191"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.707989" elapsed="0.000189"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.708673" level="INFO">${CD_APP_URL} = tb://8b01876066524052a5f30645</msg>
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.708369" elapsed="0.000357"/>
+</kw>
+<status status="PASS" start="2025-04-09T05:11:15.705195" elapsed="0.003572"/>
+</branch>
+<status status="PASS" start="2025-04-09T05:11:15.705177" elapsed="0.003618"/>
+</if>
+<status status="PASS" start="2025-04-09T05:11:15.697529" elapsed="0.011317"/>
+</kw>
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-04-09T05:11:15.896967" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-04-09T05:11:15.896729" elapsed="0.000456">No application is open</status>
+</kw>
+<msg time="2025-04-09T05:11:15.899386" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-04-09T05:11:15.899673" level="FAIL">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</msg>
+<arg>http://${TESTINGBOT_KEY}:${TESTINGBOT_SECRET}@hub.testingbot.com/wd/hub</arg>
+<arg>platformName=${M_TYPE}</arg>
+<arg>deviceName=${CD_DEVICE}</arg>
+<arg>version=${CD_OS}</arg>
+<arg>app=${CD_APP_URL}</arg>
+<arg>realDevice=true</arg>
+<arg>build=[${TIME_STAMP}][${ENV}][VERS_COMP] REKENINGKU FLUTTER</arg>
+<arg>name=${TEST_NAME}</arg>
+<arg>autoGrantPermissions=true</arg>
+<arg>automationName=UiAutomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-04-09T05:11:15.708958" elapsed="0.190914">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</status>
+</kw>
+<kw name="Click signin button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.900100" elapsed="0.000034"/>
+</kw>
+<kw name="Display sign in page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.900281" elapsed="0.000027"/>
+</kw>
+<kw name="Input signin email textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_EMAIL}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:15.900448" elapsed="0.000024"/>
+</kw>
+<kw name="Input signin password textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_PASSWORD}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:15.900776" elapsed="0.000032"/>
+</kw>
+<kw name="Click signin action button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.900951" elapsed="0.000025"/>
+</kw>
+<kw name="Display pin verification page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.901100" elapsed="0.000024"/>
+</kw>
+<kw name="Input pin verification textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_PIN}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:15.901260" elapsed="0.000024"/>
+</kw>
+<kw name="Display home page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.901460" elapsed="0.000027"/>
+</kw>
+<kw name="Check coachmark popup if showup" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.901614" elapsed="0.000024"/>
+</kw>
+<kw name="Check navbar home is selected" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.901767" elapsed="0.000025"/>
+</kw>
+<kw name="Click profile menu button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.901976" elapsed="0.000027"/>
+</kw>
+<kw name="Check profile page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:15.902158" elapsed="0.000025"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.902286" elapsed="0.000022"/>
+</kw>
+<tag>VERS_COMP</tag>
+<status status="FAIL" start="2025-04-09T05:11:15.695078" elapsed="0.207380">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</status>
+</test>
+<test id="s1-s1-s1-t10" name="ANDROID - v6.0 - Galaxy S6 (Emulator)" line="285">
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.903666" level="INFO">${M_TYPE} = ANDROID</msg>
+<arg>${M_TYPE}</arg>
+<arg>ANDROID</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.903446" elapsed="0.000271"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.904048" level="INFO">${CD_DEVICE} = Galaxy S6</msg>
+<arg>${CD_DEVICE}</arg>
+<arg>Galaxy S6</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.903846" elapsed="0.000249"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.904408" level="INFO">${CD_OS} = 6.0</msg>
+<arg>${CD_OS}</arg>
+<arg>6.0</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.904217" elapsed="0.000237"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.904812" level="INFO">${CD_APP_URL} = tb://8b01876066524052a5f30645</msg>
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL_APK}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.904574" elapsed="0.000287"/>
+</kw>
+<kw name="Set data environment and device" owner="general">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.905592" level="INFO">
+LOG AutomatedTest</msg>
+<arg>\nLOG AutomatedTest</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.905478" elapsed="0.000174"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\nLOG AutomatedTest</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.905765" elapsed="0.000156"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.906361" level="INFO">Run on Environment	: PROD</msg>
+<arg>Run on Environment\t: ${ENV}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.906204" elapsed="0.000209"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Run on Environment\t: ${ENV}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.906537" elapsed="0.000193"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.907194" level="INFO">${ENV} = PROD</msg>
+<arg>${ENV}</arg>
+<arg>${ENV}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.906919" elapsed="0.000324"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.907507" level="INFO">TAG TEST		: VERS_COMP</msg>
+<arg>TAG TEST\t\t: ${TAG_TEST}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.907363" elapsed="0.000194"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TAG TEST\t\t: ${TAG_TEST}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.907670" elapsed="0.000193"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.908332" level="INFO">${TAG_TEST} = VERS_COMP</msg>
+<arg>${TAG_TEST}</arg>
+<arg>${TAG_TEST}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.908050" elapsed="0.000331"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.908659" level="INFO">Mobile Device Type	: ANDROID</msg>
+<arg>Mobile Device Type\t: ${M_TYPE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.908502" elapsed="0.000210"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Mobile Device Type\t: ${M_TYPE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.908827" elapsed="0.000196"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.909487" level="INFO">${M_TYPE} = ANDROID</msg>
+<arg>${M_TYPE}</arg>
+<arg>${M_TYPE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.909209" elapsed="0.000326"/>
+</kw>
+<kw name="Get Variables" owner="BuiltIn">
+<arg>${DEVICE}</arg>
+<doc>Returns a dictionary containing all variables in the current scope.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.909652" elapsed="0.000409"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.910324" level="INFO">Run with Cloud Device	: TESTINGBOT</msg>
+<arg>Run with Cloud Device\t: ${DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.910182" elapsed="0.000191"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Run with Cloud Device\t: ${DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.910486" elapsed="0.000191"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.911146" level="INFO">${DEVICE} = TESTINGBOT</msg>
+<arg>${DEVICE}</arg>
+<arg>${DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.910869" elapsed="0.000327"/>
+</kw>
+<if>
+<branch type="IF" condition="('${DEVICE}'=='BROWSERSTACK')">
+<kw name="Log" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.911604" elapsed="0.000025"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.911738" elapsed="0.000023"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_DEVICE}</arg>
+<arg>${CD_DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.911868" elapsed="0.000023"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.911998" elapsed="0.000022"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.912122" elapsed="0.000022"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_OS}</arg>
+<arg>${CD_OS}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.912251" elapsed="0.000022"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.912377" elapsed="0.000022"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.912542" elapsed="0.000023"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:15.912692" elapsed="0.000023"/>
+</kw>
+<status status="NOT RUN" start="2025-04-09T05:11:15.911281" elapsed="0.001471"/>
+</branch>
+<status status="PASS" start="2025-04-09T05:11:15.911258" elapsed="0.001521"/>
+</if>
+<if>
+<branch type="IF" condition="('${DEVICE}'=='TESTINGBOT')">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.913170" level="INFO">CD_DEVICE		: Galaxy S6</msg>
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.913020" elapsed="0.000202"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.913335" elapsed="0.000193"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.914000" level="INFO">${CD_DEVICE} = Galaxy S6</msg>
+<arg>${CD_DEVICE}</arg>
+<arg>${CD_DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.913717" elapsed="0.000333"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.914312" level="INFO">CD_OS			: 6.0</msg>
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.914169" elapsed="0.000193"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.914474" elapsed="0.000191"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.915130" level="INFO">${CD_OS} = 6.0</msg>
+<arg>${CD_OS}</arg>
+<arg>${CD_OS}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.914856" elapsed="0.000323"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.915439" level="INFO">CD_APP_URL		: tb://8b01876066524052a5f30645</msg>
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.915297" elapsed="0.000192"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.915603" elapsed="0.000186"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:15.916259" level="INFO">${CD_APP_URL} = tb://8b01876066524052a5f30645</msg>
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:15.915977" elapsed="0.000331"/>
+</kw>
+<status status="PASS" start="2025-04-09T05:11:15.912840" elapsed="0.003507"/>
+</branch>
+<status status="PASS" start="2025-04-09T05:11:15.912822" elapsed="0.003552"/>
+</if>
+<status status="PASS" start="2025-04-09T05:11:15.905225" elapsed="0.011198"/>
+</kw>
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-04-09T05:11:16.103695" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-04-09T05:11:16.103503" elapsed="0.000388">No application is open</status>
+</kw>
+<msg time="2025-04-09T05:11:16.106154" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-04-09T05:11:16.106424" level="FAIL">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</msg>
+<arg>http://${TESTINGBOT_KEY}:${TESTINGBOT_SECRET}@hub.testingbot.com/wd/hub</arg>
+<arg>platformName=${M_TYPE}</arg>
+<arg>deviceName=${CD_DEVICE}</arg>
+<arg>version=${CD_OS}</arg>
+<arg>app=${CD_APP_URL}</arg>
+<arg>realDevice=true</arg>
+<arg>build=[${TIME_STAMP}][${ENV}][VERS_COMP] REKENINGKU FLUTTER</arg>
+<arg>name=${TEST_NAME}</arg>
+<arg>autoGrantPermissions=true</arg>
+<arg>automationName=UiAutomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-04-09T05:11:15.916535" elapsed="0.190065">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</status>
+</kw>
+<kw name="Click signin button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:16.106817" elapsed="0.000032"/>
+</kw>
+<kw name="Display sign in page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:16.106993" elapsed="0.000027"/>
+</kw>
+<kw name="Input signin email textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_EMAIL}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:16.107162" elapsed="0.000026"/>
+</kw>
+<kw name="Input signin password textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_PASSWORD}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:16.107417" elapsed="0.000026"/>
+</kw>
+<kw name="Click signin action button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:16.107573" elapsed="0.000025"/>
+</kw>
+<kw name="Display pin verification page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:16.107727" elapsed="0.000024"/>
+</kw>
+<kw name="Input pin verification textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_PIN}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:16.107884" elapsed="0.000025"/>
+</kw>
+<kw name="Display home page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:16.108035" elapsed="0.000025"/>
+</kw>
+<kw name="Check coachmark popup if showup" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:16.108184" elapsed="0.000024"/>
+</kw>
+<kw name="Check navbar home is selected" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:16.108336" elapsed="0.000025"/>
+</kw>
+<kw name="Click profile menu button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:16.108541" elapsed="0.000025"/>
+</kw>
+<kw name="Check profile page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:16.108771" elapsed="0.000029"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:16.108907" elapsed="0.000023"/>
+</kw>
+<tag>VERS_COMP</tag>
+<status status="FAIL" start="2025-04-09T05:11:15.903045" elapsed="0.206030">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</status>
+</test>
+<test id="s1-s1-s1-t11" name="IOS - v16.3 - iPhone XR" line="316">
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:16.110249" level="INFO">${M_TYPE} = IOS</msg>
+<arg>${M_TYPE}</arg>
+<arg>IOS</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.110030" elapsed="0.000272"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:16.110631" level="INFO">${CD_DEVICE} = iPhone XR</msg>
+<arg>${CD_DEVICE}</arg>
+<arg>iPhone XR</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.110430" elapsed="0.000256"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:16.111051" level="INFO">${CD_OS} = 16.3</msg>
+<arg>${CD_OS}</arg>
+<arg>16.3</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.110855" elapsed="0.000242"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:16.111442" level="INFO">${CD_APP_URL} = tb://2aa2cac76cac23405c7a857e</msg>
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL_IPA}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.111219" elapsed="0.000270"/>
+</kw>
+<kw name="Set data environment and device" owner="general">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:16.112362" level="INFO">
+LOG AutomatedTest</msg>
+<arg>\nLOG AutomatedTest</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.112246" elapsed="0.000169"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\nLOG AutomatedTest</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.112530" elapsed="0.000193"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:16.113220" level="INFO">Run on Environment	: PROD</msg>
+<arg>Run on Environment\t: ${ENV}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.113014" elapsed="0.000261"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Run on Environment\t: ${ENV}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.113395" elapsed="0.000194"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:16.114073" level="INFO">${ENV} = PROD</msg>
+<arg>${ENV}</arg>
+<arg>${ENV}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.113777" elapsed="0.000347"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:16.114388" level="INFO">TAG TEST		: VERS_COMP</msg>
+<arg>TAG TEST\t\t: ${TAG_TEST}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.114245" elapsed="0.000193"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>TAG TEST\t\t: ${TAG_TEST}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.114551" elapsed="0.000201"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:16.115241" level="INFO">${TAG_TEST} = VERS_COMP</msg>
+<arg>${TAG_TEST}</arg>
+<arg>${TAG_TEST}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.114939" elapsed="0.000352"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:16.115548" level="INFO">Mobile Device Type	: IOS</msg>
+<arg>Mobile Device Type\t: ${M_TYPE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.115409" elapsed="0.000187"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Mobile Device Type\t: ${M_TYPE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.115719" elapsed="0.000190"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:16.116398" level="INFO">${M_TYPE} = IOS</msg>
+<arg>${M_TYPE}</arg>
+<arg>${M_TYPE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.116099" elapsed="0.000349"/>
+</kw>
+<kw name="Get Variables" owner="BuiltIn">
+<arg>${DEVICE}</arg>
+<doc>Returns a dictionary containing all variables in the current scope.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.116567" elapsed="0.000422"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:16.117253" level="INFO">Run with Cloud Device	: TESTINGBOT</msg>
+<arg>Run with Cloud Device\t: ${DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.117111" elapsed="0.000192"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Run with Cloud Device\t: ${DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.117415" elapsed="0.000187"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:16.118085" level="INFO">${DEVICE} = TESTINGBOT</msg>
+<arg>${DEVICE}</arg>
+<arg>${DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.117788" elapsed="0.000347"/>
+</kw>
+<if>
+<branch type="IF" condition="('${DEVICE}'=='BROWSERSTACK')">
+<kw name="Log" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:16.118412" elapsed="0.000024"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:16.118551" elapsed="0.000022"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_DEVICE}</arg>
+<arg>${CD_DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:16.118686" elapsed="0.000022"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:16.118816" elapsed="0.000022"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:16.118941" elapsed="0.000021"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_OS}</arg>
+<arg>${CD_OS}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:16.119069" elapsed="0.000022"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:16.119197" elapsed="0.000022"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:16.119322" elapsed="0.000022"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:16.119450" elapsed="0.000022"/>
+</kw>
+<status status="NOT RUN" start="2025-04-09T05:11:16.118220" elapsed="0.001286"/>
+</branch>
+<status status="PASS" start="2025-04-09T05:11:16.118197" elapsed="0.001335"/>
+</if>
+<if>
+<branch type="IF" condition="('${DEVICE}'=='TESTINGBOT')">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:16.119931" level="INFO">CD_DEVICE		: iPhone XR</msg>
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.119774" elapsed="0.000210"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_DEVICE\t\t: ${CD_DEVICE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.120123" elapsed="0.000203"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:16.120837" level="INFO">${CD_DEVICE} = iPhone XR</msg>
+<arg>${CD_DEVICE}</arg>
+<arg>${CD_DEVICE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.120518" elapsed="0.000371"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:16.121154" level="INFO">CD_OS			: 16.3</msg>
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.121011" elapsed="0.000231"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_OS\t\t\t: ${CD_OS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.121361" elapsed="0.000201"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:16.122053" level="INFO">${CD_OS} = 16.3</msg>
+<arg>${CD_OS}</arg>
+<arg>${CD_OS}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.121753" elapsed="0.000351"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-09T05:11:16.122366" level="INFO">CD_APP_URL		: tb://2aa2cac76cac23405c7a857e</msg>
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.122223" elapsed="0.000194"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CD_APP_URL\t\t: ${CD_APP_URL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.122532" elapsed="0.000197"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-09T05:11:16.123483" level="INFO">${CD_APP_URL} = tb://2aa2cac76cac23405c7a857e</msg>
+<arg>${CD_APP_URL}</arg>
+<arg>${CD_APP_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-09T05:11:16.123219" elapsed="0.000319"/>
+</kw>
+<status status="PASS" start="2025-04-09T05:11:16.119593" elapsed="0.003988"/>
+</branch>
+<status status="PASS" start="2025-04-09T05:11:16.119575" elapsed="0.004035"/>
+</if>
+<status status="PASS" start="2025-04-09T05:11:16.111854" elapsed="0.011819"/>
+</kw>
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-04-09T05:11:16.309913" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-04-09T05:11:16.309615" elapsed="0.000548">No application is open</status>
+</kw>
+<msg time="2025-04-09T05:11:16.312474" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-04-09T05:11:16.312676" level="FAIL">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</msg>
+<arg>http://${TESTINGBOT_KEY}:${TESTINGBOT_SECRET}@hub.testingbot.com/wd/hub</arg>
+<arg>platformName=${M_TYPE}</arg>
+<arg>deviceName=${CD_DEVICE}</arg>
+<arg>version=${CD_OS}</arg>
+<arg>app=${CD_APP_URL}</arg>
+<arg>realDevice=true</arg>
+<arg>build=[${TIME_STAMP}][${ENV}][VERS_COMP] REKENINGKU FLUTTER</arg>
+<arg>name=${TEST_NAME}</arg>
+<arg>autoAcceptAlerts=true</arg>
+<arg>automationName=XCUITest</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-04-09T05:11:16.123791" elapsed="0.189098">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</status>
+</kw>
+<kw name="Click signin button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:16.313195" elapsed="0.000037"/>
+</kw>
+<kw name="Display sign in page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:16.313383" elapsed="0.000027"/>
+</kw>
+<kw name="Input signin email textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_EMAIL}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:16.313554" elapsed="0.000025"/>
+</kw>
+<kw name="Input signin password textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_PASSWORD}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:16.313826" elapsed="0.000027"/>
+</kw>
+<kw name="Click signin action button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:16.313994" elapsed="0.000034"/>
+</kw>
+<kw name="Display pin verification page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:16.314158" elapsed="0.000026"/>
+</kw>
+<kw name="Input pin verification textbox" owner="signin_page">
+<arg>${${ENV}_VERIFIED_USER_PIN}</arg>
+<status status="NOT RUN" start="2025-04-09T05:11:16.314326" elapsed="0.000026"/>
+</kw>
+<kw name="Display home page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:16.314489" elapsed="0.000026"/>
+</kw>
+<kw name="Check coachmark popup if showup" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:16.314647" elapsed="0.000025"/>
+</kw>
+<kw name="Check navbar home is selected" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:16.314804" elapsed="0.000025"/>
+</kw>
+<kw name="Click profile menu button" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:16.315189" elapsed="0.000028"/>
+</kw>
+<kw name="Check profile page" owner="signin_page">
+<status status="NOT RUN" start="2025-04-09T05:11:16.315378" elapsed="0.000026"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="NOT RUN" start="2025-04-09T05:11:16.315506" elapsed="0.000023"/>
+</kw>
+<tag>VERS_COMP</tag>
+<status status="FAIL" start="2025-04-09T05:11:16.109635" elapsed="0.206060">WebDriverException: Message: Insufficient credits. Please add credits on testingbot.com
+</status>
+</test>
+<status status="FAIL" start="2025-04-09T05:11:13.670826" elapsed="2.645502"/>
+</suite>
+<status status="FAIL" start="2025-04-09T05:11:13.669659" elapsed="2.647614"/>
+</suite>
+<status status="FAIL" start="2025-04-09T05:11:13.652424" elapsed="2.665763"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="11" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="11" skip="0">VERS_COMP</stat>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="0" fail="11" skip="0">Suites</stat>
+<stat name="Compatibility" id="s1-s1" pass="0" fail="11" skip="0">Suites.Compatibility</stat>
+<stat name="Version Compatibility Test" id="s1-s1-s1" pass="0" fail="11" skip="0">Suites.Compatibility.Version Compatibility Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-04-09T05:11:14.066889" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-04-09T05:11:14.283918" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-04-09T05:11:14.492551" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-04-09T05:11:14.696085" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-04-09T05:11:14.965971" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-04-09T05:11:15.201984" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-04-09T05:11:15.420002" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-04-09T05:11:15.690213" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-04-09T05:11:15.899386" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-04-09T05:11:16.106154" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-04-09T05:11:16.312474" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
